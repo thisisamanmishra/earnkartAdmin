@@ -6,7 +6,7 @@ console.log(
 export const API_BASE_URL =
   process.env.NODE_ENV == "production" ||
   process.env.REACT_APP_DEV_REMOTE == "remote"
-    ? "https://erp-crm.idurarapp.com/api/"
+    ? "https://earnkartadmin.onrender.com/api/"
     : "http://localhost:8888/api/"
 
 // export const API_BASE_URL = "https://wild-puce-reindeer-sari.cyclic.app/api/";

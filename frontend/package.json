@@ -20,9 +20,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && craco start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider craco start",
     "dev:remote": "cross-env REACT_APP_DEV_REMOTE=remote npm start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -46,5 +46,9 @@
     "cross-env": "^7.0.3",
     "react-reconciler": "^0.26.2",
     "react-refresh": "^0.10.0"
-  }
+  },
+  "engines": {
+  "node": "16.16.0"
+}
+
 }
